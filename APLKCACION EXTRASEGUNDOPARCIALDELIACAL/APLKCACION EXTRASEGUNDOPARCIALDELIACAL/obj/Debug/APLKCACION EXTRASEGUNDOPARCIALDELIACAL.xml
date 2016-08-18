@@ -1,0 +1,151 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+APLKCACION EXTRASEGUNDOPARCIALDELIACAL
+</name>
+</assembly>
+<members>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.costosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.estadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.KWHDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.usuariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.costosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.estadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.KWHRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.usuariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.costosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.estadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.KWHRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet.usuariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.costosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.estadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.KWHTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.usuariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.UpdateAll(APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>
