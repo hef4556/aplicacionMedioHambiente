@@ -38,6 +38,11 @@ Partial Class Resultados
         Me.KWHDataSet = New APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSet()
         Me.UsuariosTableAdapter = New APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.usuariosTableAdapter()
         Me.TableAdapterManager = New APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.UsuariosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsuariosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KWHDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,9 +80,9 @@ Partial Class Resultados
         Me.UsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.UsuariosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.UsuariosDataGridView.DataSource = Me.UsuariosBindingSource
-        Me.UsuariosDataGridView.Location = New System.Drawing.Point(15, 97)
+        Me.UsuariosDataGridView.Location = New System.Drawing.Point(15, 145)
         Me.UsuariosDataGridView.Name = "UsuariosDataGridView"
-        Me.UsuariosDataGridView.Size = New System.Drawing.Size(542, 220)
+        Me.UsuariosDataGridView.Size = New System.Drawing.Size(642, 182)
         Me.UsuariosDataGridView.TabIndex = 4
         '
         'DataGridViewTextBoxColumn1
@@ -139,13 +144,68 @@ Partial Class Resultados
         Me.TableAdapterManager.UpdateOrder = APLKCACION_EXTRASEGUNDOPARCIALDELIACAL.KWHDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.usuariosTableAdapter = Me.UsuariosTableAdapter
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(15, 116)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox1.TabIndex = 5
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 94)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(152, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Numero de paneles agregados"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(95, 113)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(52, 24)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "agregar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(210, 113)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(88, 24)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Cambiar Focos"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(189, 94)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(132, 13)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Cambiar Focos a focos led"
+        '
         'Resultados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(671, 339)
+        Me.ClientSize = New System.Drawing.Size(716, 339)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.UsuariosDataGridView)
         Me.Controls.Add(Me.txtTipoConsumo)
         Me.Controls.Add(Me.Label2)
@@ -174,4 +234,9 @@ Partial Class Resultados
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label4 As Label
 End Class

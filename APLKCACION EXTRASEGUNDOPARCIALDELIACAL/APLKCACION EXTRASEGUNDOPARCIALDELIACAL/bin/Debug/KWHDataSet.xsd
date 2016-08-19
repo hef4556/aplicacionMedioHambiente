@@ -303,7 +303,7 @@ WHERE        (nombre = ?)</CommandText>
               <Mapping SourceColumn="pagoReducido" DataSetColumn="pagoReducido" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="usuarios" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCuota" Modifier="Public" Name="getCuota" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getCuota">
+              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="usuarios" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getCuota" Modifier="Public" Name="getCuota" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getCuota">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        tipoCuota
@@ -315,7 +315,7 @@ WHERE        (nombre = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="insertUsuario" Modifier="Public" Name="insertUsuario" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="insertUsuario">
+              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="insertUsuario" Modifier="Public" Name="insertUsuario" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="insertUsuario">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO usuarios
@@ -329,7 +329,7 @@ VALUES        (?, ?, ?)</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="usuarios" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="selectPagoNormal" Modifier="Public" Name="selectPagoNormal" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="selectPagoNormal">
+              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="usuarios" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="selectPagoNormal" Modifier="Public" Name="selectPagoNormal" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="selectPagoNormal">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        pagoNormal
@@ -341,7 +341,7 @@ WHERE        (nombre = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updatePagoNormal" Modifier="Public" Name="updatePagoNormal" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="updatePagoNormal">
+              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updatePagoNormal" Modifier="Public" Name="updatePagoNormal" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="updatePagoNormal">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE       usuarios
@@ -349,6 +349,19 @@ SET                pagoNormal = ?
 WHERE        (nombre = ?)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="pagoNormal" DataSourceName="usuarios" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="pagoNormal" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="pagoNormal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="nombre" DataSourceName="usuarios" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="KWHConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updateReducido" Modifier="Public" Name="updateReducido" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="updateReducido">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       usuarios
+SET               pagoReducido = ?
+WHERE        (nombre = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="pagoReducido" DataSourceName="usuarios" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="pagoReducido" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="pagoReducido" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="nombre" DataSourceName="usuarios" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="Original_nombre" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
