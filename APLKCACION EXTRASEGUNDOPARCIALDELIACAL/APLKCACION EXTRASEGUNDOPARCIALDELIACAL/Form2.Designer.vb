@@ -67,7 +67,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Bienvenido"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

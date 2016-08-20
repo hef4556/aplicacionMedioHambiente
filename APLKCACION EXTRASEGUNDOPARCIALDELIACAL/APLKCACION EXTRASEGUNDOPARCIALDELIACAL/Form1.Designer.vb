@@ -515,7 +515,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Txtunidades2)
         Me.Controls.Add(Me.Txtunidades1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Calculo de Costos"
         CType(Me.KWHDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KWHBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KWHDataSet, System.ComponentModel.ISupportInitialize).EndInit()
